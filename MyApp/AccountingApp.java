@@ -2,11 +2,15 @@
 public class AccountingApp {
 
 	public static void main(String[] args) {
-		
+		// 공급가액
 		double valueOfSupply = Double.parseDouble(args[0]);
+		
+		// 부가가치세율
 		double vatRate = 0.1;
 		double expenseRate = 0.3;
+		// 부가세
 		double vat = valueOfSupply * vatRate;
+		// 합계
 		double total = valueOfSupply + valueOfSupply * vatRate;
 		double expense = valueOfSupply * expenseRate ;
 		double income = valueOfSupply - valueOfSupply * expenseRate;
